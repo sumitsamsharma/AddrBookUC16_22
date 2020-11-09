@@ -1,9 +1,11 @@
 //import com.opencsv.exceptions.CsvValidationException;
+
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.Date;
 
 public class AddressBookMainTest {
 
@@ -20,26 +22,11 @@ public class AddressBookMainTest {
         Assert.assertNotNull(addressBook.readDB());
     }
 
-    /*@Test
+    @Test
     public void givenName_shouldReturnIfSync() throws SQLException {
         AddressBook addressBook = new AddressBook();
         addressBook.readDB();
         Assert.assertTrue(addressBook.checkSync("Ashish Aggarwal"));
-    }
-
-    @Test
-    public void givenStartAndEndDate_shouldReturnNumberOfPeople() throws SQLException {
-        AddressBook addressBook = new AddressBook();
-        addressBook.readDB();
-        Assert.assertEquals(2,addressBook.findDoj("2018-01-01","2019-01-01"));
-    }
-
-    @Test
-    public void givenStateAndCity_shouldReturnNumberOfPeople() throws SQLException {
-        AddressBook addressBook = new AddressBook();
-        addressBook.readDB();
-        //Assert.assertEquals(2,addressBook.retrieveByState("California"));
-        Assert.assertEquals(2,addressBook.retrieveByCity("California"));
     }
 
     @Test
@@ -55,6 +42,23 @@ public class AddressBookMainTest {
         Assert.assertEquals(7,size+1);
 
     }
+/*
+    @Test
+    public void givenStartAndEndDate_shouldReturnNumberOfPeople() throws SQLException {
+        AddressBook addressBook = new AddressBook();
+        addressBook.readDB();
+        Assert.assertEquals(2,addressBook.findDoj("2018-01-01","2019-01-01"));
+    }
+
+    @Test
+    public void givenStateAndCity_shouldReturnNumberOfPeople() throws SQLException {
+        AddressBook addressBook = new AddressBook();
+        addressBook.readDB();
+        //Assert.assertEquals(2,addressBook.retrieveByState("California"));
+        Assert.assertEquals(2,addressBook.retrieveByCity("California"));
+    }
+
+
 
     @Test
     public void givenAddressBook_shouldInsertAll() throws IOException, SQLException {
