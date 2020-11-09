@@ -49,7 +49,7 @@ public class AddressBookMainTest {
         addressBook.readDB();
         Assert.assertEquals(2,addressBook.findDoj("2018-01-01","2019-01-01"));
     }
-/*
+
     @Test
     public void givenStateAndCity_shouldReturnNumberOfPeople() throws SQLException {
         AddressBook addressBook = new AddressBook();
@@ -58,7 +58,7 @@ public class AddressBookMainTest {
         Assert.assertEquals(2,addressBook.retrieveByCity("California"));
     }
 
-
+/*
 
     @Test
     public void givenAddressBook_shouldInsertAll() throws IOException, SQLException {
