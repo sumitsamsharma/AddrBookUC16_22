@@ -42,14 +42,14 @@ public class AddressBookMainTest {
         Assert.assertEquals(7,size+1);
 
     }
-/*
+
     @Test
     public void givenStartAndEndDate_shouldReturnNumberOfPeople() throws SQLException {
         AddressBook addressBook = new AddressBook();
         addressBook.readDB();
         Assert.assertEquals(2,addressBook.findDoj("2018-01-01","2019-01-01"));
     }
-
+/*
     @Test
     public void givenStateAndCity_shouldReturnNumberOfPeople() throws SQLException {
         AddressBook addressBook = new AddressBook();
