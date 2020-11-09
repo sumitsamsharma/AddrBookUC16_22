@@ -3,8 +3,10 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class AddressBookMainTest {
@@ -58,7 +60,7 @@ public class AddressBookMainTest {
         Assert.assertEquals(2,addressBook.retrieveByCity("California"));
     }
 
-/*
+
 
     @Test
     public void givenAddressBook_shouldInsertAll() throws IOException, SQLException {
@@ -79,7 +81,7 @@ public class AddressBookMainTest {
         addressBook.readDB();
         Assert.assertEquals(20,size+3);
     }
-
+/*
     @Test
     public void givenJsonServer_shouldPerformIOOperation() throws SQLException {
         RestAssured.baseURI = "http://localhost";
