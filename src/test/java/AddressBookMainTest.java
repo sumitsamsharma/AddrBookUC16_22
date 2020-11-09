@@ -1,5 +1,7 @@
 //import com.opencsv.exceptions.CsvValidationException;
 
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,6 +10,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.LinkedHashMap;
 
 public class AddressBookMainTest {
 
@@ -81,7 +84,7 @@ public class AddressBookMainTest {
         addressBook.readDB();
         Assert.assertEquals(20,size+3);
     }
-/*
+
     @Test
     public void givenJsonServer_shouldPerformIOOperation() throws SQLException {
         RestAssured.baseURI = "http://localhost";
@@ -111,5 +114,5 @@ public class AddressBookMainTest {
         }
 
 
-    }*/
+    }
 }
